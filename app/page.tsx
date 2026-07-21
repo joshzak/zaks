@@ -9,7 +9,10 @@ function CardContents({ company }: { company: Company }) {
     <div className="company-copy">
       <h2>{company.name}</h2>
       <p>{company.description}</p>
-      <div className="company-meta"><span>{company.category}</span><span>{company.year}</span></div>
+      {company.placeholder
+        ? company.ctaUrl && <a className="placeholder-cta" href={company.ctaUrl}>{company.ctaLabel}</a>
+        : <div className="company-meta"><span>{company.category}</span><span>{company.year}</span></div>
+      }
     </div>
   </>;
 }

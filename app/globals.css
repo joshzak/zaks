@@ -50,7 +50,7 @@ a { color: inherit; }
   font-weight: 600;
   line-height: 1;
   letter-spacing: normal;
-  transform: translateX(10px);
+  transform: translateX(9px);
 }
 .brand-left, .brand-right, .ampersand { position: absolute; top: 0; white-space: nowrap; }
 .brand-left { right: calc(50% + 28px); }
@@ -145,6 +145,24 @@ a.company-card:focus-visible { outline: 2px solid var(--color-brand); outline-of
 }
 .company-card--placeholder { color: var(--color-placeholder); background: rgba(248, 247, 240, 0.32); border-style: dashed; box-shadow: none; cursor: default; }
 .company-card--placeholder .company-logo img { width: 86px; height: 86px; filter: grayscale(1); opacity: 0.42; }
+.company-card--placeholder .company-copy p { margin-bottom: 10px; }
+.placeholder-cta {
+  display: inline-flex;
+  min-height: 24px;
+  align-items: center;
+  padding: 3px 9px;
+  color: var(--color-body);
+  border: 1px solid var(--color-meta-border);
+  border-radius: 8px;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color var(--transition-card), border-color var(--transition-card);
+}
+.placeholder-cta:hover { background: rgba(255, 255, 255, 0.52); border-color: rgba(79, 75, 64, 0.32); }
+.placeholder-cta:focus-visible { outline: 2px solid var(--color-brand); outline-offset: 3px; }
 .placeholder-mark { display: grid; width: 86px; height: 86px; place-items: center; border: 1px dashed currentColor; border-radius: 50%; font-family: var(--font-serif); font-size: 17px; }
 
 @media (max-width: 1080px) and (min-width: 861px) {
@@ -186,5 +204,5 @@ a.company-card:focus-visible { outline: 2px solid var(--color-brand); outline-of
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .company-card, .signature a { transition: none; }
+  .company-card, .signature a, .placeholder-cta { transition: none; }
 }
