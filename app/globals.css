@@ -4,12 +4,13 @@
   --color-ink: #141414;
   --color-body: #352d27;
   --color-brand: #3d1414;
+  --color-left-background: #2d3f42;
+  --color-on-dark: #f8f7ef;
   --color-card: rgba(248, 247, 240, 0.58);
   --color-card-hover: #fff;
   --color-border: rgba(79, 75, 64, 0.17);
   --color-meta-border: rgba(79, 75, 64, 0.2);
   --color-placeholder: #8f8b80;
-  --spring-gradient: linear-gradient(105deg, #d5cfd7 0%, #d9e2d8 100%);
   --right-panel-background: #f7f5eb;
   --left-column-width: min(36.328125vw, 465px);
   --right-column-width: min(36.09375vw, 462px);
@@ -44,20 +45,18 @@ a { color: inherit; }
   inset: 73px 0 auto;
   height: 91px;
   margin: 0;
-  color: #2d3f42;
   font-family: var(--font-sans);
-  font-size: 58px;
-  font-weight: 600;
-  line-height: 1;
+  font-size: 60px;
+  line-height: normal;
   letter-spacing: normal;
-  transform: translateX(9px);
+  transform: translateX(23px);
 }
 .brand-left, .brand-right, .ampersand { position: absolute; top: 0; white-space: nowrap; }
-.brand-left { right: calc(50% + 28px); }
-.ampersand { left: 50%; transform: translateX(-50%); letter-spacing: 0; }
-.brand-right { left: calc(50% + 28px); }
+.brand-left { right: calc(50% + 28px); color: var(--color-on-dark); font-weight: 600; }
+.ampersand { left: 50%; color: var(--color-left-background); font-weight: 500; letter-spacing: 0; transform: translateX(-50%); }
+.brand-right { left: calc(50% + 28px); color: var(--color-left-background); font-weight: 600; }
 
-.zaks-panel { position: fixed; inset: 0 50% 0 0; background: var(--spring-gradient); }
+.zaks-panel { position: fixed; inset: 0 50% 0 0; background: var(--color-left-background); }
 .zaks-content { position: absolute; top: var(--content-top); right: var(--left-center-gutter); width: var(--left-column-width); }
 .zaks-photo {
   display: block;
@@ -72,7 +71,7 @@ a { color: inherit; }
 .identity-copy { min-width: 0; padding-top: 3px; transform: translateY(3px); }
 .manifesto {
   margin: 0;
-  color: var(--color-ink);
+  color: var(--color-on-dark);
   font-family: var(--font-serif);
   font-size: 34px;
   font-weight: 400;
@@ -80,11 +79,11 @@ a { color: inherit; }
   letter-spacing: 0;
   white-space: nowrap;
 }
-.signature { display: flex; align-items: center; gap: 14px; margin: 9px 0 0 2px; color: var(--color-body); font-family: var(--font-sans); font-size: 14px; font-weight: 400; line-height: 24px; letter-spacing: 0; white-space: nowrap; }
-.signature-divider { width: 1px; height: 16px; background: rgba(35, 29, 26, 0.65); }
+.signature { display: flex; align-items: center; gap: 14px; margin: 9px 0 0 2px; color: var(--color-on-dark); font-family: var(--font-sans); font-size: 14px; font-weight: 400; line-height: 24px; letter-spacing: 0; white-space: nowrap; }
+.signature-divider { width: 1px; height: 16px; background: var(--color-on-dark); }
 .signature a { text-underline-offset: 2px; text-decoration-thickness: 1px; transition: opacity 160ms ease; }
 .signature a:hover { opacity: 0.64; }
-.signature a:focus-visible { border-radius: 2px; outline: 2px solid var(--color-brand); outline-offset: 3px; }
+.signature a:focus-visible { border-radius: 2px; outline: 2px solid var(--color-on-dark); outline-offset: 3px; }
 
 .portfolio-panel {
   position: fixed;
@@ -179,7 +178,7 @@ a.company-card:focus-visible { outline: 2px solid var(--color-brand); outline-of
 
 @media (max-width: 860px) {
   :root { --left-column-width: 100%; --right-column-width: 100%; --content-top: 0px; }
-  .site-shell { height: auto; min-height: 100vh; overflow: visible; padding: 24px 24px 60px; background: var(--spring-gradient); }
+  .site-shell { height: auto; min-height: 100vh; overflow: visible; padding: 24px 24px 60px; background: var(--color-left-background); }
   .masthead { display: none; }
   .brand-left, .brand-right, .ampersand { position: static; display: inline; transform: none; }
   .brand-left::after, .ampersand::after { content: " "; }
@@ -187,7 +186,7 @@ a.company-card:focus-visible { outline: 2px solid var(--color-brand); outline-of
   .zaks-content { position: static; width: min(100%, 540px); margin: 0 auto; }
   .identity-block { margin-top: 30px; }
   .portfolio-list { width: min(100%, 540px); margin: 50px auto 0; padding: 0; }
-  .company-card { grid-template-columns: 110px minmax(0, 1fr); column-gap: 24px; }
+  .company-card { grid-template-columns: 110px minmax(0, 1fr); column-gap: 24px; background: var(--color-on-dark); }
   .company-logo { width: 110px; }
 }
 

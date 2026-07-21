@@ -1,6 +1,6 @@
 export const identityImageConfig = {
   seasonalImagesEnabled: false,
-  evergreenImagePath: "/images/zaks-croatia-2.png",
+  evergreenImagePath: "/images/zaks-croatia-3.png",
   seasonalImages: {
     spring: "/images/zaks-spring-placeholder.jpg.png"
   }
