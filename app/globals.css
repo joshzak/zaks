@@ -44,7 +44,7 @@ a { color: inherit; }
   inset: 73px 0 auto;
   height: 91px;
   margin: 0;
-  color: var(--color-brand);
+  color: #2d3f42;
   font-family: var(--font-sans);
   font-size: 58px;
   font-weight: 600;
@@ -160,7 +160,7 @@ a.company-card:focus-visible { outline: 2px solid var(--color-brand); outline-of
 
 @media (max-width: 860px) {
   :root { --left-column-width: 100%; --right-column-width: 100%; --content-top: 0px; }
-  .site-shell { height: auto; min-height: 100vh; overflow: visible; padding: 42px 24px 60px; background: var(--spring-gradient); }
+  .site-shell { height: auto; min-height: 100vh; overflow: visible; padding: 24px 24px 60px; background: var(--spring-gradient); }
   .masthead { display: none; }
   .brand-left, .brand-right, .ampersand { position: static; display: inline; transform: none; }
   .brand-left::after, .ampersand::after { content: " "; }
