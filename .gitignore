@@ -87,6 +87,10 @@ web_modules/
 .next
 out
 
+# Local Vinext/Cloudflare state from the previous runtime
+.wrangler/
+.openai/
+
 # Nuxt.js build / generate output
 .nuxt
 dist
