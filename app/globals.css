@@ -50,6 +50,7 @@ a { color: inherit; }
   font-weight: 600;
   line-height: 1;
   letter-spacing: normal;
+  transform: translateX(10px);
 }
 .brand-left, .brand-right, .ampersand { position: absolute; top: 0; white-space: nowrap; }
 .brand-left { right: calc(50% + 28px); }
