@@ -1,6 +1,19 @@
 import { companies, type Company } from "./portfolio";
 import { activeIdentityImagePath } from "./site-config";
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Zaks & Co",
+  url: "https://zaks.co",
+  description: "Just a couple of investors turning ideas into assets.",
+  email: "the@zaks.co",
+  founder: [
+    { "@type": "Person", name: "Josh Zak" },
+    { "@type": "Person", name: "Tessa Zak" }
+  ]
+};
+
 function CardContents({ company }: { company: Company }) {
   return <>
     <div className="company-logo" aria-hidden="true">
@@ -18,7 +31,12 @@ function CardContents({ company }: { company: Company }) {
 }
 
 export default function Home() {
-  return <main className="site-shell">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd).replace(/</g, "\\u003c") }}
+    />
+    <main className="site-shell">
     <h1 className="masthead" aria-label="Zaks and Company">
       <span className="brand-left">ZAKS</span><span className="ampersand">&amp;</span><span className="brand-right">CO</span>
     </h1>
@@ -44,5 +62,6 @@ export default function Home() {
         )}
       </div>
     </section>
-  </main>;
+    </main>
+  </>;
 }
