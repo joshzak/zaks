@@ -6,7 +6,7 @@ const organizationJsonLd = {
   "@type": "Organization",
   name: "Zaks & Co",
   url: "https://zaks.co",
-  description: "Just a couple of investors turning ideas into assets.",
+  description: "A couple of investors turning ideas into assets.",
   email: "the@zaks.co",
   founder: [
     { "@type": "Person", name: "Josh Zak" },
@@ -47,7 +47,7 @@ export default function Home() {
         <div className="identity-block">
           <img className="zaks-seal" src="/logos/zc-wax-seal-v2.png" alt="" aria-hidden="true" />
           <div className="identity-copy">
-            <p className="manifesto" id="zaks-story">Just a couple of investors<br />turning ideas into assets.</p>
+            <p className="manifesto" id="zaks-story">A couple of investors<br />turning ideas into assets.</p>
             <p className="signature"><span>Josh &amp; Tessa Zak</span><span className="signature-divider" aria-hidden="true" /><a href="mailto:the@zaks.co">the@zaks.co</a></p>
           </div>
         </div>

@@ -42,7 +42,7 @@ when hovering.
 
 - Seasonal photograph of Josh and Tessa together
 - Zaks seal placeholder
-- “Just a couple of investors turning ideas into assets.”
+- “A couple of investors turning ideas into assets.”
 - “Josh & Tessa Zak”
 - clickable email address
 - no individual founder cards or LinkedIn links

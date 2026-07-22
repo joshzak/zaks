@@ -7,7 +7,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://zaks.co"),
   title: "Zaks & Co",
-  description: "Zaks & Co — Just a couple of investors turning ideas into assets.",
+  description: "Zaks & Co — A couple of investors turning ideas into assets.",
   alternates: {
     canonical: "https://zaks.co"
   },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Zaks & Co",
-    description: "Just a couple of investors turning ideas into assets.",
+    description: "A couple of investors turning ideas into assets.",
     url: "https://zaks.co",
     siteName: "Zaks & Co",
     type: "website",
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
         url: "/images/zaks-open-graph.png",
         width: 1200,
         height: 630,
-        alt: "Zaks & Co — Just a couple of investors turning ideas into assets."
+        alt: "Zaks & Co — A couple of investors turning ideas into assets."
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
     title: "Zaks & Co",
-    description: "Just a couple of investors turning ideas into assets.",
+    description: "A couple of investors turning ideas into assets.",
     images: ["/images/zaks-open-graph.png"]
   }
 };
