@@ -45,7 +45,7 @@ export default function Home() {
       <div className="zaks-content">
         <img className="zaks-photo" src={activeIdentityImagePath} alt="Josh and Tessa Zak together in Croatia" />
         <div className="identity-block">
-          <img className="zaks-seal" src="/logos/zaks-seal-placeholder.png" alt="" aria-hidden="true" />
+          <img className="zaks-seal" src="/logos/zc-wax-seal-v2.png" alt="" aria-hidden="true" />
           <div className="identity-copy">
             <p className="manifesto" id="zaks-story">Just a couple of investors<br />turning ideas into assets.</p>
             <p className="signature"><span>Josh &amp; Tessa Zak</span><span className="signature-divider" aria-hidden="true" /><a href="mailto:the@zaks.co">the@zaks.co</a></p>

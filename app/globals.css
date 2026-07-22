@@ -79,7 +79,7 @@ a { color: inherit; }
   letter-spacing: 0;
   white-space: nowrap;
 }
-.signature { display: flex; align-items: center; gap: 14px; margin: 9px 0 0 2px; color: var(--color-on-dark); font-family: var(--font-sans); font-size: 14px; font-weight: 400; line-height: 24px; letter-spacing: 0; white-space: nowrap; }
+.signature { display: flex; align-items: center; gap: 14px; margin: 9px 0 0 2px; color: var(--color-on-dark); font-family: var(--font-sans); font-size: 15px; font-weight: 400; line-height: 24px; letter-spacing: 0; white-space: nowrap; }
 .signature-divider { width: 1px; height: 16px; background: var(--color-on-dark); }
 .signature a { text-underline-offset: 2px; text-decoration-thickness: 1px; transition: opacity 160ms ease; }
 .signature a:hover { opacity: 0.64; }
@@ -126,7 +126,7 @@ a.company-card:focus-visible { outline: 2px solid var(--color-brand); outline-of
 .company-logo img { display: block; max-width: 100px; max-height: 100px; object-fit: contain; }
 .company-copy { transform: translateY(-2px); }
 .company-copy h2 { margin: 0; color: var(--color-ink); font-family: var(--font-serif); font-size: 24px; font-weight: 400; line-height: normal; letter-spacing: 0; }
-.company-copy p { margin: 11px 0 13px; color: var(--color-body); font-family: var(--font-sans); font-size: 14px; font-weight: 400; line-height: normal; letter-spacing: 0; }
+.company-copy p { margin: 11px 0 13px; color: var(--color-body); font-family: var(--font-sans); font-size: 15px; font-weight: 400; line-height: normal; letter-spacing: 0; }
 .company-meta { display: flex; align-items: center; gap: 6px; transform: translateY(8px); }
 .company-meta span {
   display: inline-flex;
@@ -195,11 +195,11 @@ a.company-card:focus-visible { outline: 2px solid var(--color-brand); outline-of
   .identity-block { align-items: flex-start; gap: 14px; }
   .zaks-seal { width: 92px; height: 97px; flex-basis: 92px; margin-left: 0; }
   .manifesto { font-size: clamp(25px, 7.4vw, 34px); line-height: 1.29; letter-spacing: 0; }
-  .signature { flex-wrap: wrap; gap: 8px 10px; margin-top: 12px; font-size: 13px; white-space: normal; }
+  .signature { flex-wrap: wrap; gap: 8px 10px; margin-top: 12px; font-size: 14px; white-space: normal; }
   .company-card { grid-template-columns: 78px minmax(0, 1fr); column-gap: 18px; min-height: 160px; padding: 24px 20px; }
   .company-logo { width: 78px; height: 88px; }
   .company-logo img { max-width: 76px; max-height: 82px; }
-  .company-copy p { font-size: 13px; }
+  .company-copy p { font-size: 14px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
