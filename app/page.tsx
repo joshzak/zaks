@@ -48,8 +48,8 @@ export default function Home() {
           className="zaks-photo"
           src={activeIdentityImagePath}
           alt="Josh and Tessa Zak together in Croatia"
-          width={1448}
-          height={1086}
+          width={1080}
+          height={810}
           sizes="(max-width: 540px) calc(100vw - 36px), (max-width: 1080px) min(540px, calc(100vw - 48px)), min(465px, 36.328125vw)"
           quality={94}
           preload
@@ -60,8 +60,8 @@ export default function Home() {
             src="/logos/zc-wax-seal-v2.webp"
             alt=""
             aria-hidden="true"
-            width={1440}
-            height={1444}
+            width={256}
+            height={257}
             sizes="(max-width: 540px) 92px, 118px"
             quality={92}
           />
