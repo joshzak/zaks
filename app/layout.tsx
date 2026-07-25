@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import type { ReactNode } from "react";
 import { GeistSans } from "geist/font/sans";
 import "@fontsource/instrument-serif/400.css";
@@ -50,5 +51,16 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
-  return <html lang="en" className={GeistSans.variable}><body>{children}</body></html>;
+  return (
+    <html lang="en" className={GeistSans.variable}>
+      <body>
+        {children}
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="vOcsjWh62fnKfyx74ZkOuw"
+          strategy="afterInteractive"
+        />
+      </body>
+    </html>
+  );
 }
