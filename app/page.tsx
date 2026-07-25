@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { companies, type Company } from "./portfolio";
 import { activeIdentityImagePath } from "./site-config";
 
@@ -43,9 +44,27 @@ export default function Home() {
 
     <section className="zaks-panel" aria-labelledby="zaks-story">
       <div className="zaks-content">
-        <img className="zaks-photo" src={activeIdentityImagePath} alt="Josh and Tessa Zak together in Croatia" />
+        <Image
+          className="zaks-photo"
+          src={activeIdentityImagePath}
+          alt="Josh and Tessa Zak together in Croatia"
+          width={1448}
+          height={1086}
+          sizes="(max-width: 540px) calc(100vw - 36px), (max-width: 1080px) min(540px, calc(100vw - 48px)), min(465px, 36.328125vw)"
+          quality={94}
+          preload
+        />
         <div className="identity-block">
-          <img className="zaks-seal" src="/logos/zc-wax-seal-v2.png" alt="" aria-hidden="true" />
+          <Image
+            className="zaks-seal"
+            src="/logos/zc-wax-seal-v2.webp"
+            alt=""
+            aria-hidden="true"
+            width={1440}
+            height={1444}
+            sizes="(max-width: 540px) 92px, 118px"
+            quality={92}
+          />
           <div className="identity-copy">
             <p className="manifesto" id="zaks-story">A couple of investors<br />turning ideas into assets.</p>
             <p className="signature"><span>Josh &amp; Tessa Zak</span><span className="signature-divider" aria-hidden="true" /><a href="mailto:the@zaks.co">the@zaks.co</a></p>
