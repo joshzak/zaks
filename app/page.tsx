@@ -75,10 +75,17 @@ export default function Home() {
 
     <section className="portfolio-panel" aria-label="Zaks and Company portfolio">
       <div className="portfolio-list">
-        {companies.map((company, index) => company.enabled && company.url
-          ? <a className="company-card" href={company.url} key={`${company.name}-${index}`}><CardContents company={company} /></a>
-          : <article className="company-card company-card--placeholder" aria-label={`${company.name}, placeholder`} key={`${company.name}-${index}`}><CardContents company={company} /></article>
-        )}
+        {companies.map((company, index) => {
+          const key = `${company.name}-${index}`;
+
+          if (company.placeholder) {
+            return <article className="company-card company-card--placeholder" aria-label={`${company.name}, placeholder`} key={key}><CardContents company={company} /></article>;
+          }
+
+          return company.url
+            ? <a className="company-card" href={company.url} key={key}><CardContents company={company} /></a>
+            : <article className="company-card" key={key}><CardContents company={company} /></article>;
+        })}
       </div>
     </section>
     </main>
