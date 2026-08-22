@@ -1,8 +1,8 @@
 export type Company = {
   name: string;
   description: string;
-  category: string;
-  year: string;
+  category?: string;
+  year?: string;
   url: string | null;
   logoPath: string | null;
   enabled: boolean;
@@ -13,6 +13,7 @@ export type Company = {
 
 export const companies: Company[] = [
   { name: "Turtle Design", description: "We design world-class teams that design world-class products.", category: "Design Services", year: "2016", url: "https://turtle.design", logoPath: "/logos/turtle.svg", enabled: true, placeholder: false },
+  { name: "Employee", description: "Canada’s workforce platform.", url: "https://employee.ca/", logoPath: "/logos/employee-mark.svg", enabled: true, placeholder: false },
   { name: "Zero Carbon Labs", description: "We build climate technology.", category: "Software Development", year: "2016", url: "https://www.zerocarbonlabs.com/", logoPath: "/logos/zcl-Icon.svg", enabled: true, placeholder: false },
   { name: "Agency Owners", description: "Building the operating platform for owner-led agencies.", category: "Design Services", year: "2026", url: "https://agencyowners.com", logoPath: "/logos/agency-owners.svg", enabled: true, placeholder: false },
   { name: "Obilazak", description: "Venture studio focused on unlocking opportunities in Croatia.", category: "Venture Studio", year: "2026", url: "https://obilazak.com", logoPath: "/logos/obilazak.svg", enabled: true, placeholder: false },

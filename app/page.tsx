@@ -25,7 +25,7 @@ function CardContents({ company }: { company: Company }) {
       <p>{company.description}</p>
       {company.placeholder
         ? company.ctaUrl && <a className="placeholder-cta" href={company.ctaUrl}>{company.ctaLabel}</a>
-        : <div className="company-meta"><span>{company.category}</span><span>{company.year}</span></div>
+        : (company.category || company.year) && <div className="company-meta">{company.category && <span>{company.category}</span>}{company.year && <span>{company.year}</span>}</div>
       }
     </div>
   </>;
